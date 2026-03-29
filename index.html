@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Lunar Calendar – a simple offline lunar calendar app for Android." />
+  <title>Privacy Policy – Lunar Calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #222636;
+      --border: rgba(255,255,255,0.08);
+      --accent: #7c6aff;
+      --accent2: #a78bfa;
+      --text: #e2e8f0;
+      --text-muted: #8892a4;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1d2e 0%, #12151f 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124,106,255,.15);
+      border: 1px solid rgba(124,106,255,.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent2);
+      margin-bottom: 20px;
+    }
+
+    .moon-icon {
+      font-size: 20px;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      background: linear-gradient(135deg, #fff 0%, var(--accent2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+
+    header p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    /* ── Main ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .meta-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .meta-chip span { color: var(--text); font-weight: 500; }
+
+    /* ── Highlight box ── */
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(124,106,255,.12), rgba(167,139,250,.06));
+      border: 1px solid rgba(124,106,255,.3);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .highlight-box .big-icon { font-size: 32px; flex-shrink: 0; line-height: 1; }
+
+    .highlight-box p { color: var(--text); font-size: 15px; }
+
+    .highlight-box p strong { color: var(--accent2); }
+
+    /* ── Sections ── */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      transition: border-color .2s;
+    }
+
+    section:hover { border-color: rgba(124,106,255,.3); }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(124,106,255,.15);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    section p, section li {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    section ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    section li { margin-bottom: 6px; }
+
+    section li::marker { color: var(--accent); }
+
+    .tag {
+      display: inline-block;
+      background: rgba(167,139,250,.15);
+      border: 1px solid rgba(167,139,250,.25);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 12px;
+      color: var(--accent2);
+      font-weight: 500;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* ── Contact ── */
+    .contact-section {
+      background: linear-gradient(135deg, #1e2035 0%, #1a1d2e 100%);
+      border-color: rgba(124,106,255,.2);
+      text-align: center;
+    }
+
+    .contact-section a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dashed rgba(167,139,250,.4);
+      padding-bottom: 1px;
+      transition: border-color .2s;
+    }
+
+    .contact-section a:hover { border-color: var(--accent2); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--accent2); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      section { padding: 20px 18px; }
+      main { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">
+      <span class="moon-icon">🌙</span>
+      Lunar Calendar App
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Your privacy is our top priority. Here's what you need to know.</p>
+  </header>
+
+  <main>
+    <div class="meta-bar">
+      <div class="meta-chip">📅 Effective: <span>March 29, 2025</span></div>
+      <div class="meta-chip">🔄 Last Updated: <span>March 29, 2025</span></div>
+      <div class="meta-chip">📦 App: <span>Lunar Calendar</span></div>
+      <div class="meta-chip">🤝 Developer: <span>TanPhat</span></div>
+    </div>
+
+    <div class="highlight-box">
+      <div class="big-icon">🛡️</div>
+      <p>
+        <strong>Lunar Calendar collects no personal data.</strong>
+        This application works fully offline and does not require any account creation, login, or personal information. Everything stays on your device.
+      </p>
+    </div>
+
+    <!-- 1. Overview -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>1. Overview</h2>
+      </div>
+      <p>
+        This Privacy Policy describes how <strong>Lunar Calendar</strong> ("the App", "we", "us") handles information
+        when you use our Android application. By installing and using this App, you agree to the practices
+        described in this policy.
+      </p>
+    </section>
+
+    <!-- 2. Information We Collect -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">📊</div>
+        <h2>2. Information We Collect <span class="tag">None Personal</span></h2>
+      </div>
+      <p>We do <strong>not</strong> collect, store, or transmit any personally identifiable information (PII). Specifically:</p>
+      <ul>
+        <li>No name, email address, phone number, or account information is required or collected.</li>
+        <li>No location data is accessed or stored.</li>
+        <li>No contacts, photos, or files on your device are accessed.</li>
+        <li>No unique device identifiers are used for tracking purposes.</li>
+      </ul>
+    </section>
+
+    <!-- 3. Data Stored Locally -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">💾</div>
+        <h2>3. Data Stored Locally on Your Device</h2>
+      </div>
+      <p>The App stores the following data <strong>exclusively on your device</strong>:</p>
+      <ul>
+        <li><strong>Reminders:</strong> Reminder titles, descriptions, dates, and times you set within the App.</li>
+        <li><strong>App preferences:</strong> Language selection (English / Vietnamese) and theme mode (Light / Dark / System).</li>
+        <li><strong>Cached lunar data:</strong> Pre-computed lunar calendar data for offline performance.</li>
+      </ul>
+      <p style="margin-top:12px;">This data never leaves your device and is not accessible by us or any third party.</p>
+    </section>
+
+    <!-- 4. Permissions -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">🔐</div>
+        <h2>4. Permissions Used</h2>
+      </div>
+      <ul>
+        <li>
+          <strong>INTERNET</strong> – Used only for Firebase Analytics and Crashlytics (see Section 5).
+          No personal data is shared.
+        </li>
+        <li>
+          <strong>POST_NOTIFICATIONS</strong> – Required (Android 13+) to display reminder notifications you set.
+          Only triggered on devices running Android 13 (API 33) or higher.
+        </li>
+        <li>
+          <strong>RECEIVE_BOOT_COMPLETED</strong> – Allows the App to reschedule your reminders after a device reboot,
+          so you don't miss any notifications.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Third-Party Services -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">🔗</div>
+        <h2>5. Third-Party Services</h2>
+      </div>
+      <p>The App uses the following Google Firebase services, which may collect anonymized, aggregated data:</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics</strong> – Collects anonymized usage statistics (e.g., screen views, session duration)
+          to help us improve the App. No personal data is linked to these statistics.
+          See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener"
+            style="color:#a78bfa;">Firebase Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Firebase Crashlytics</strong> – Automatically reports crash logs to help us identify and fix bugs.
+          Reports contain device model, OS version, and stack traces — no personal information.
+          See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener"
+            style="color:#a78bfa;">Firebase Privacy Policy</a>.
+        </li>
+      </ul>
+      <p style="margin-top:12px;">These services are governed by Google's Privacy Policy. We do not sell, rent, or share your data with any other third parties.</p>
+    </section>
+
+    <!-- 6. Children -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">👶</div>
+        <h2>6. Children's Privacy</h2>
+      </div>
+      <p>
+        This App does not knowingly collect any information from children under the age of 13.
+        Since no personal data is collected at all, the App is safe for users of all ages.
+      </p>
+    </section>
+
+    <!-- 7. Security -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>7. Data Security</h2>
+      </div>
+      <p>
+        Since all user-generated data (reminders and preferences) is stored locally on your device using
+        Android's secure SharedPreferences and Room database, it is protected by your device's built-in
+        security mechanisms (screen lock, encryption, etc.). We have no access to this data.
+      </p>
+    </section>
+
+    <!-- 8. Changes -->
+    <section>
+      <div class="section-header">
+        <div class="section-icon">🔄</div>
+        <h2>8. Changes to This Policy</h2>
+      </div>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be reflected on this page
+        with an updated "Last Updated" date. We encourage you to review this policy periodically.
+        Continued use of the App after changes constitutes acceptance of the updated policy.
+      </p>
+    </section>
+
+    <!-- 9. Contact -->
+    <section class="contact-section">
+      <div class="section-header" style="justify-content:center;">
+        <div class="section-icon">✉️</div>
+        <h2>9. Contact Us</h2>
+      </div>
+      <p>
+        If you have any questions or concerns about this Privacy Policy, please reach out via GitHub Issues:<br /><br />
+        <a href="https://github.com/tanphatstqn/calendar/issues" target="_blank" rel="noopener">
+          github.com/tanphatstqn/calendar/issues
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lunar Calendar · <a href="https://github.com/tanphatstqn/calendar" target="_blank" rel="noopener">View on GitHub</a></p>
+  </footer>
+
+</body>
+</html>
